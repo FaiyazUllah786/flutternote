@@ -49,7 +49,7 @@ mongoose.connect("mongodb+srv://faiyazullah:faiyazmongo@cluster0.goocj3m.mongodb
 
 });
 
-
-app.listen(process.env.PORT || 5000,function() {
+const PORT = process.env.PORT || 5000;
+app.listen(PORT,function() {
   console.log("Server is UP"+PORT);
 });
